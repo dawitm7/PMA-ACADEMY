@@ -1,0 +1,59 @@
+app/page.js
+export default function Home() {
+  return (
+    <main className="bg-[#0E0E0E] text-white min-h-screen">
+      
+      <section className="flex flex-col items-center text-center px-6 py-32">
+        <h1 className="text-5xl font-bold max-w-3xl">
+          Trade With <span className="text-[#D4AF37]">Institutional Precision</span>
+        </h1>
+        <p className="mt-6 text-gray-300 max-w-xl">
+          Prosperia Market Academy delivers professional Smart Money & Institutional concepts built for serious traders.
+        </p>
+
+        <a
+          href="https://t.me/realprosperiafx"
+          className="mt-10 bg-[#D4AF37] text-black px-8 py-4 rounded-xl font-semibold"
+        >
+          Join via Telegram
+        </a>
+      </section>
+
+      <section className="px-6 py-24 max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+        <Card title="Smart Money Concepts" price="$99.99" />
+        <Card title="Institutional Concepts" price="$99.99" />
+        <Card title="Trader Mindset" price="$49.99" />
+      </section>
+
+      <section className="px-6 py-24 bg-black text-center">
+        <p className="text-[#D4AF37] font-semibold">MOST POPULAR</p>
+        <h2 className="text-3xl font-bold mt-2">
+          SMC + ICT + Mindset
+        </h2>
+        <p className="text-4xl font-bold my-4">$199.99</p>
+        <a
+          href="https://t.me/realprosperiafx"
+          className="bg-[#D4AF37] text-black px-6 py-3 rounded-lg font-semibold"
+        >
+          Subscribe via Telegram
+        </a>
+      </section>
+
+    </main>
+  );
+}
+
+function Card({ title, price }) {
+  return (
+    <div className="border border-gray-800 rounded-2xl p-6 text-center">
+      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <p className="text-2xl font-bold mb-4">{price}</p>
+      <a
+        href="https://t.me/realprosperiafx"
+        className="bg-[#D4AF37] text-black px-4 py-2 rounded-lg font-semibold"
+      >
+        Join Telegram
+      </a>
+    </div>
+  );
+}
